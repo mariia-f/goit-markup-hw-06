@@ -29,6 +29,11 @@
           <a class="header-logo logo" href="./index.html"
             >Web<span class="logo-darck">Studio</span></a
           >
+          <button class="menu-button" type="button">
+            <svg class="menu-icon" width="17" height="15">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="nav-list">
             <li class="nav-items">
               <a class="nav-link active" href="./index.html">Studio</a>
@@ -125,7 +130,11 @@
           <ul class="team-list">
             <li class="team-list-items">
               <img
-                src="./images/our-team/mark.jpg"
+                srcset="
+                  ./images/our-team/mark-1x 1x.jpg,
+                  ./images/our-team/mark-2x 2x.jpg
+                "
+                src="./images/our-team/mark-1x.jpg"
                 alt="Mark Guerrero's photo"
                 width="264"
                 height="260"
@@ -168,7 +177,11 @@
 
             <li class="team-list-items">
               <img
-                src="./images/our-team/tom.jpg"
+                srcset="
+                  ./images/our-team/tom-1x 1x.jpg,
+                  ./images/our-team/tom-2x 2x.jpg
+                "
+                src="./images/our-team/tom-1x.jpg"
                 alt="Tom Ford's photo"
                 width="264"
                 height="260"
@@ -211,7 +224,11 @@
 
             <li class="team-list-items">
               <img
-                src="./images/our-team/camila.jpg"
+                srcset="
+                  ./images/our-team/camila-1x 1x.jpg,
+                  ./images/our-team/camila-2x 2x.jpg
+                "
+                src="./images/our-team/camila-1x.jpg"
                 alt="Camila Garcia's photo"
                 width="264"
                 height="260"
@@ -254,7 +271,11 @@
 
             <li class="team-list-items">
               <img
-                src="./images/our-team/daniel.jpg"
+                srcset="
+                  ./images/our-team/daniel-1x 1x.jpg,
+                  ./images/our-team/daniel-2x 2x.jpg
+                "
+                src="./images/our-team/daniel-1x.jpg"
                 alt="Daniel Wilson's photo"
                 width="264"
                 height="260"
@@ -304,7 +325,11 @@
             <li class="portfolio-list-items">
               <div class="box">
                 <img
-                  src="./images/portfolio/row1-card1.jpg"
+                  srcset="
+                  ./images/portfolio/row1-card1-1x 1x.jpg,
+                  ./images/our-team/row1-card1-2x 2x.jpg
+                "
+                  src="./images/portfolio/row1-card1-1x.jpg"
                   alt="screenshots of an app"
                   width="360"
                   height="300"
@@ -325,7 +350,11 @@
             <li class="portfolio-list-items">
               <div class="box">
                 <img
-                  src="./images/portfolio/row1-card2.jpg"
+                  srcset="
+                  ./images/portfolio/row1-card2-1x 1x.jpg,
+                  ./images/our-team/row1-card2-2x 2x.jpg
+                "
+                  src="./images/portfolio/row1-card2-1x.jpg"
                   alt="terminal"
                   width="360"
                   height="300"
@@ -346,7 +375,11 @@
             <li class="portfolio-list-items">
               <div class="box">
                 <img
-                  src="./images/portfolio/row1-card3.jpg"
+                  srcset="
+                  ./images/portfolio/row1-card3-1x 1x.jpg,
+                  ./images/our-team/row1-card3-2x 2x.jpg
+                "
+                  src="./images/portfolio/row1-card3-1x.jpg"
                   alt="laptop and phone with the app"
                   width="360"
                   height="300"
@@ -366,7 +399,11 @@
             <li class="portfolio-list-items">
               <div class="box">
                 <img
-                  src="./images/portfolio/row2-card1.jpg"
+                  srcset="
+                  ./images/portfolio/row2-card1-1x 1x.jpg,
+                  ./images/our-team/row2-card1-2x 2x.jpg
+                "
+                  src="./images/portfolio/row2-card1-1x.jpg"
                   alt="car steering wheel"
                   width="360"
                   height="300"
@@ -386,7 +423,11 @@
             <li class="portfolio-list-items">
               <div class="box">
                 <img
-                  src="./images/portfolio/row2-card2.jpg"
+                  srcset="
+                  ./images/portfolio/row2-card2-1x 1x.jpg,
+                  ./images/our-team/row2-card2-2x 2x.jpg
+                "
+                  src="./images/portfolio/row2-card2-1x.jpg"
                   alt="phone and its lock screen design"
                   width="360"
                   height="300"
@@ -409,7 +450,11 @@
             <li class="portfolio-list-items">
               <div class="box">
                 <img
-                  src="./images/portfolio/row2-card3.jpg"
+                  srcset="
+                  ./images/portfolio/row2-card3-1x 1x.jpg,
+                  ./images/our-team/row2-card3-2x 2x.jpg
+                "
+                  src="./images/portfolio/row2-card3-1x.jpg"
                   alt="girl in a yellow sweater listening to an online course"
                   width="360"
                   height="300"
@@ -509,7 +554,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal-wind">
         <button type="button" class="close-btn">
           <svg class="close-icon" width="8" height="8">
@@ -579,20 +624,84 @@
               value="true"
             />
             <label class="useragreement" for="user-privacy">
-              <span class="accept-wrapper">
-                <svg class="accept-checkbox" width="10" height="8">
-                  <use href="./images/icons.svg#icon-accept"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="policy-link" href="#" target="_blank">
-                Privacy Policy
-              </a>
+              <div class="accept-left">
+                <span class="accept-wrapper">
+                  <svg class="accept-checkbox" width="10" height="8">
+                    <use href="./images/icons.svg#icon-accept"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="accept-right">
+                I accept the terms and conditions of the
+                <a class="policy-link" href="#" target="_blank">
+                  Privacy Policy
+                </a>
+              </div>
             </label>
           </div>
           <button class="accept-btn btn" type="submit">Send</button>
         </form>
       </div>
+    </div>
+    <div class="mobail-menu">
+      <button type="button" class="menu-btn">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <ul class="mob-menu-list">
+        <li class="menu-items">
+          <a class="menu-link" href="./index.html">Studio</a>
+        </li>
+        <li class="menu-items">
+          <a class="menu-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="menu-items">
+          <a class="menu-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+      <ul class="menu-contacts-list">
+        <li class="menu-contacts-items">
+          <a class="menu-contacts-address" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="menu-contacts-items">
+          <a class="menu-contacts-address" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+      <ul class="menu-social-list">
+        <li class="menu-social-items">
+          <a class="menu-social-link" href="https://www.instagram.com/">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-items">
+          <a class="menu-social-link" href="https://www.twitter.com/">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-items">
+          <a class="menu-social-link" href="https://www.facebook.com/">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-items">
+          <a class="menu-social-link" href="https://www.linkedin.com/">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
